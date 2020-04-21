@@ -74,6 +74,7 @@
               <mainClass>${main.class}</mainClass>
             </manifest>
           </archive>
+          <finalName>Bot</finalName>
         </configuration>
       </plugin>
 
@@ -97,6 +98,8 @@
               <descriptorRefs>
                 <descriptorRef>jar-with-dependencies</descriptorRef>
               </descriptorRefs>
+              <finalName>Bot</finalName>
+              <appendAssemblyId>false</appendAssemblyId>
             </configuration>
           </execution>
         </executions>
