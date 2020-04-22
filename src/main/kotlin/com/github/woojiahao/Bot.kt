@@ -7,7 +7,7 @@ fun main() {
   val token = System.getenv("BOT_TOKEN")
     ?: throw Exception("Must include bot token in environment variable for bot to run")
   val jda = JDABuilder
-    .create(token, GatewayIntent.GUILD_MESSAGES)
+    .createDefault(token)
     .addEventListeners(PingListener())
     .build()
 }
